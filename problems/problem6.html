@@ -36,7 +36,7 @@
         let angle = k * Math.PI / 30;
         let center_x = Math.cos(angle);
         let center_y = Math.sin(angle);
-        engine.draw_debug_sphere([center_x, center_y], 0.05, 0x00eeff, 0.9);
+        engine.draw_debug_sphere([center_x, center_y, 0], 0.05, 0x00eeff, 0.9);
         engine.draw_debug_vector([0,0], [center_x, center_y]);
         k += 1;
     });
